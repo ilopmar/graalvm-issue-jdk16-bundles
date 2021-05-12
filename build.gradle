@@ -1,0 +1,21 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "7.0.0"
+    id "application"
+    id "java"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+application {
+    setMainClassName('example.App')
+}
+
+java {
+    sourceCompatibility = JavaVersion.toVersion('11')
+    targetCompatibility = JavaVersion.toVersion('11')
+}
